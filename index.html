@@ -17,7 +17,7 @@
             </div>
 
             <!-- Navigation -->
-            <nav class="nav">
+            <nav class="nav" id="navMenu">
                 <ul>
                     <li class="active">Home <span class="arrow">▼</span></li>
                     <li>Pages</li>
@@ -36,11 +36,25 @@
                 </button>
             </div>
 
+            <!-- Hamburger menu (mobile) -->
+            <div class="hamburger">
+                <img src="image/menu.svg" alt="menu">
+            </div>
+
         </div>
     </header>
 
     <!-- padding to avoid header overlap -->
     <div style="height:120px;"></div>
+
+    <script>
+        const nav = document.getElementById("navMenu");
+        const burger = document.querySelector(".hamburger");
+
+        burger.onclick = () => {
+            nav.style.right = nav.style.right === "0px" ? "-260px" : "0px";
+        };
+    </script>
 
 </body>
 </html>

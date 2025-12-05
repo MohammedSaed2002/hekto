@@ -111,3 +111,58 @@ body{
     height: 18px;
     filter: invert(1); 
 }
+
+/* Hamburger (hidden on desktop) */
+.hamburger {
+    display: none;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+/* Tablets + Mobile */
+@media (max-width: 768px) {
+
+    /* Hide desktop nav */
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -260px;
+        width: 260px;
+        height: 100vh;
+        background: #fff;
+        box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+        padding-top: 100px;
+        transition: right 0.3s ease;
+        z-index: 999;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 25px;
+        padding-left: 25px;
+    }
+
+    /* Show hamburger */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger img {
+        width: 30px;
+    }
+
+    /* Hide search */
+    .search-box {
+        display: none;
+    }
+}
+
+/* Mobile small screens */
+@media (max-width: 480px) {
+    .logo img {
+        height: 26px;
+    }
+}
