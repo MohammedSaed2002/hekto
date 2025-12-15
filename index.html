@@ -8,160 +8,169 @@
 </head>
 <body>
 
-    <header class="header">
-        <div class="container">
+<header class="header">
+    <div class="container">
 
-            <div class="logo">
-                <img src="image/Hekto.svg" alt="Hekto Logo">
-            </div>
+        <figure class="logo">
+            <img src="image/Hekto.svg" alt="Hekto Logo">
+        </figure>
 
-            <nav class="nav" id="navMenu">
-                <ul>
-                    <li class="active">Home <span class="arrow">▼</span></li>
-                    <li>Pages</li>
-                    <li>Products</li>
-                    <li>Blog</li>
-                    <li>Shop</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
+        <nav class="nav" id="navMenu">
+            <ul>
+                <li class="active">Home <span class="arrow">▼</span></li>
+                <li>Pages</li>
+                <li>Products</li>
+                <li>Blog</li>
+                <li>Shop</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
 
-            <div class="search-box">
-                <input type="text">
-                <button>
-                    <img src="image/uil_search.svg" alt="search">
-                </button>
-            </div>
+        <form class="search-box">
+            <input type="search">
+            <button type="submit">
+                <img src="image/uil_search.svg" alt="search">
+            </button>
+        </form>
 
-            <div class="hamburger">
-                <img src="image/menu.svg" alt="menu">
-            </div>
+        <button class="hamburger">
+            <img src="image/menu.svg" alt="menu">
+        </button>
 
-        </div>
-    </header>
+    </div>
+</header>
 
-
-
-
-
+<main>
 
 <section class="featured-section">
-  <h2 class="section-title">Featured Products</h2>
+    <h2 class="section-title">Featured Products</h2>
 
+    <input type="radio" name="product" id="product1" hidden>
+    <input type="radio" name="product" id="product2" hidden>
+    <input type="radio" name="product" id="product3" hidden>
+    <input type="radio" name="product" id="product4" hidden>
 
-  <input type="radio" name="product" id="product1" hidden>
-  <input type="radio" name="product" id="product2" hidden>
-  <input type="radio" name="product" id="product3" hidden>
-  <input type="radio" name="product" id="product4" hidden>
+    <section class="products-container">
 
+        <article>
+            <label for="product1" class="product-card">
+                <div class="icons">
+                    <span class="icon"><img src="image/fluent_cart-24-regular.svg"></span>
+                    <span class="icon"><img src="image/uil_heart-alt.svg"></span>
+                    <span class="icon"><img src="image/uil_search-plus.svg"></span>
+                </div>
 
-  <div class="products-container">
+                <figure class="card-top">
+                    <img src="image/image 1168.svg" alt="chair">
+                </figure>
 
-    <label for="product1" class="product-card">
-      <div class="icons">
-        <span class="icon"><img src="image/fluent_cart-24-regular.svg" alt="icon1"></span>
-        <span class="icon"><img src="image/uil_heart-alt.svg" alt="icon2"></span>
-        <span class="icon"><img src="image/uil_search-plus.svg" alt="icon3"></span>
-      </div>
-      <div class="card-top">
-        <img src="image/image 1168.svg" alt="chair1">
-      </div>
-      <button class="view-btn">View Details</button>
-      <div class="card-bottom">
-        <div class="p-name">Cantilever chair</div>
-        <div class="color-dots">
-          <span class="dot red"></span>
-          <span class="dot green"></span>
-          <span class="dot blue"></span>
-        </div>
-        <div class="code">Code - Y523201</div>
-        <div class="price">$42.00</div>
-      </div>
-    </label>
+                <button class="view-btn">View Details</button>
 
-    <label for="product2" class="product-card">
-      <div class="icons">
-        <span class="icon"><img src="image/fluent_cart-24-regular.svg" alt="icon1"></span>
-        <span class="icon"><img src="image/uil_heart-alt.svg" alt="icon2"></span>
-        <span class="icon"><img src="image/uil_search-plus.svg" alt="icon3"></span>
-      </div>
-      <div class="card-top">
-        <img src="image/image 1.svg" alt="chair2">
-      </div>
-      <button class="view-btn">View Details</button>
-      <div class="card-bottom">
-        <div class="p-name">Cantilever chair</div>
-        <div class="color-dots">
-          <span class="dot red"></span>
-          <span class="dot green"></span>
-          <span class="dot blue"></span>
-        </div>
-        <div class="code">Code - Y523201</div>
-        <div class="price">$42.00</div>
-      </div>
-    </label>
+                <div class="card-bottom">
+                    <h3 class="p-name">Cantilever chair</h3>
+                    <div class="color-dots">
+                        <span class="dot red"></span>
+                        <span class="dot green"></span>
+                        <span class="dot blue"></span>
+                    </div>
+                    <span class="code">Code - Y523201</span>
+                    <span class="price">$42.00</span>
+                </div>
+            </label>
+        </article>
 
-    <label for="product3" class="product-card">
-      <div class="icons">
-        <span class="icon"><img src="image/fluent_cart-24-regular.svg" alt="icon1"></span>
-        <span class="icon"><img src="image/uil_heart-alt.svg" alt="icon2"></span>
-        <span class="icon"><img src="image/uil_search-plus.svg" alt="icon3"></span>
-      </div>
-      <div class="card-top">
-        <img src="image/image 1169.svg" alt="chair3">
-      </div>
-      <button class="view-btn">View Details</button>
-      <div class="card-bottom">
-        <div class="p-name">Cantilever chair</div>
-        <div class="color-dots">
-          <span class="dot red"></span>
-          <span class="dot green"></span>
-          <span class="dot blue"></span>
-        </div>
-        <div class="code">Code - Y523201</div>
-        <div class="price">$42.00</div>
-      </div>
-    </label>
+        <article>
+            <label for="product2" class="product-card">
+                <div class="icons">
+                    <span class="icon"><img src="image/fluent_cart-24-regular.svg"></span>
+                    <span class="icon"><img src="image/uil_heart-alt.svg"></span>
+                    <span class="icon"><img src="image/uil_search-plus.svg"></span>
+                </div>
 
-    <label for="product4" class="product-card">
-      <div class="icons">
-        <span class="icon"><img src="image/fluent_cart-24-regular.svg" alt="icon1"></span>
-        <span class="icon"><img src="image/uil_heart-alt.svg" alt="icon2"></span>
-        <span class="icon"><img src="image/uil_search-plus.svg" alt="icon3"></span>
-      </div>
-      <div class="card-top">
-        <img src="image/image 3.svg" alt="chair4">
-      </div>
-      <button class="view-btn">View Details</button>
-      <div class="card-bottom">
-        <div class="p-name">Cantilever chair</div>
-        <div class="color-dots">
-          <span class="dot red"></span>
-          <span class="dot green"></span>
-          <span class="dot blue"></span>
-        </div>
-        <div class="code">Code - Y523201</div>
-        <div class="price">$42.00</div>
-      </div>
-    </label>
+                <figure class="card-top">
+                    <img src="image/image 1.svg" alt="chair">
+                </figure>
 
-  </div>
+                <button class="view-btn">View Details</button>
 
+                <div class="card-bottom">
+                    <h3 class="p-name">Cantilever chair</h3>
+                    <div class="color-dots">
+                        <span class="dot red"></span>
+                        <span class="dot green"></span>
+                        <span class="dot blue"></span>
+                    </div>
+                    <span class="code">Code - Y523201</span>
+                    <span class="price">$42.00</span>
+                </div>
+            </label>
+        </article>
 
-  <div class="pager">
-    <span class="dot1"></span>
-    <span class="dot2"></span>
-    <span class="dot3"></span>
-    <span class="dot4"></span>
-  </div>
+        <article>
+            <label for="product3" class="product-card">
+                <div class="icons">
+                    <span class="icon"><img src="image/fluent_cart-24-regular.svg"></span>
+                    <span class="icon"><img src="image/uil_heart-alt.svg"></span>
+                    <span class="icon"><img src="image/uil_search-plus.svg"></span>
+                </div>
+
+                <figure class="card-top">
+                    <img src="image/image 1169.svg" alt="chair">
+                </figure>
+
+                <button class="view-btn">View Details</button>
+
+                <div class="card-bottom">
+                    <h3 class="p-name">Cantilever chair</h3>
+                    <div class="color-dots">
+                        <span class="dot red"></span>
+                        <span class="dot green"></span>
+                        <span class="dot blue"></span>
+                    </div>
+                    <span class="code">Code - Y523201</span>
+                    <span class="price">$42.00</span>
+                </div>
+            </label>
+        </article>
+
+        <article>
+            <label for="product4" class="product-card">
+                <div class="icons">
+                    <span class="icon"><img src="image/fluent_cart-24-regular.svg"></span>
+                    <span class="icon"><img src="image/uil_heart-alt.svg"></span>
+                    <span class="icon"><img src="image/uil_search-plus.svg"></span>
+                </div>
+
+                <figure class="card-top">
+                    <img src="image/image 3.svg" alt="chair">
+                </figure>
+
+                <button class="view-btn">View Details</button>
+
+                <div class="card-bottom">
+                    <h3 class="p-name">Cantilever chair</h3>
+                    <div class="color-dots">
+                        <span class="dot red"></span>
+                        <span class="dot green"></span>
+                        <span class="dot blue"></span>
+                    </div>
+                    <span class="code">Code - Y523201</span>
+                    <span class="price">$42.00</span>
+                </div>
+            </label>
+        </article>
+
+    </section>
+
+    <nav class="pager">
+        <span class="dot1"></span>
+        <span class="dot2"></span>
+        <span class="dot3"></span>
+        <span class="dot4"></span>
+    </nav>
 </section>
 
-
-
-
-
-
-    <section class="newsletter-section">
+<section class="newsletter-section">
     <div class="newsletter-content">
         <h2>Get Latest Update By Subscribe</h2>
         <p>Our Newsletter</p>
@@ -169,68 +178,69 @@
     </div>
 </section>
 
+</main>
 
-    <footer class="footer">
-        <div class="footer-container">
+<footer class="footer">
+    <div class="footer-container">
 
-            <div class="footer-col footer-about">
-                <img src="image/Hekto.svg" alt="Hekto Logo" class="footer-logo">
+        <section class="footer-col footer-about">
+            <img src="image/Hekto.svg" alt="Hekto Logo" class="footer-logo">
 
-                <div class="newsletter">
-                    <input type="email" placeholder="Enter Email Address">
-                    <button>Sign Up</button>
-                </div>
+            <form class="newsletter">
+                <input type="email" placeholder="Enter Email Address">
+                <button type="submit">Sign Up</button>
+            </form>
 
-                <div class="contact-info">
-                    <p>Contact Info</p>
-                    <span>17 Princess Road, London, Greater London NW1 8JR, UK</span>
-                </div>
-            </div>
+            <address class="contact-info">
+                <p>Contact Info</p>
+                <span>17 Princess Road, London, Greater London NW1 8JR, UK</span>
+            </address>
+        </section>
 
-            <div class="footer-col">
-                <h4>Categories</h4>
-                <ul>
-                    <li>Laptops & Computers</li>
-                    <li>Cameras & Photography</li>
-                    <li>Smart Phones & Tablets</li>
-                    <li>Video Games & Consoles</li>
-                    <li>Waterproof Headphones</li>
-                </ul>
-            </div>
+        <section class="footer-col">
+            <h4>Categories</h4>
+            <ul>
+                <li>Laptops & Computers</li>
+                <li>Cameras & Photography</li>
+                <li>Smart Phones & Tablets</li>
+                <li>Video Games & Consoles</li>
+                <li>Waterproof Headphones</li>
+            </ul>
+        </section>
 
-            <div class="footer-col">
-                <h4>Customer Care</h4>
-                <ul>
-                    <li>My Account</li>
-                    <li>Discount</li>
-                    <li>Returns</li>
-                    <li>Orders History</li>
-                    <li>Order Tracking</li>
-                </ul>
-            </div>
+        <section class="footer-col">
+            <h4>Customer Care</h4>
+            <ul>
+                <li>My Account</li>
+                <li>Discount</li>
+                <li>Returns</li>
+                <li>Orders History</li>
+                <li>Order Tracking</li>
+            </ul>
+        </section>
 
-            <div class="footer-col">
-                <h4>Pages</h4>
-                <ul>
-                    <li>Blog</li>
-                    <li>Browse the Shop</li>
-                    <li>Category</li>
-                    <li>Pre-Built Pages</li>
-                    <li>WooCommerce Pages</li>
-                </ul>
-            </div>
+        <section class="footer-col">
+            <h4>Pages</h4>
+            <ul>
+                <li>Blog</li>
+                <li>Browse the Shop</li>
+                <li>Category</li>
+                <li>Pre-Built Pages</li>
+                <li>WooCommerce Pages</li>
+            </ul>
+        </section>
 
-        </div>
-    </footer>
+    </div>
+</footer>
 
-    <script>
-        const nav = document.getElementById("navMenu");
-        const burger = document.querySelector(".hamburger");
+<script>
+    const nav = document.getElementById("navMenu");
+    const burger = document.querySelector(".hamburger");
 
-        burger.onclick = () => {
-            nav.style.right = nav.style.right === "0px" ? "-260px" : "0px";
-        };
-    </script>
+    burger.onclick = () => {
+        nav.style.right = nav.style.right === "0px" ? "-260px" : "0px";
+    };
+</script>
 
 </body>
 </html>
