@@ -575,3 +575,286 @@ body{
     }
 }
 
+
+.hero-section {
+    width: 100%;
+    background: #F2F0FF;
+    padding: 160px 0 80px 0;
+}
+
+.hero-container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text {
+    max-width: 520px;
+}
+
+.hero-subtitle {
+    color: #FB2E86;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.hero-title {
+    font-size: 46px;
+    line-height: 1.2;
+    color: #1E3050;
+    margin: 15px 0;
+}
+
+.hero-desc {
+    color: #8A8FB9;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #FB2E86;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background: #d9206d;
+}
+
+.hero-image {
+    position: relative;
+    background: #F6F7FB;
+    border-radius: 50%;
+    padding: 40px;
+}
+
+.hero-image img {
+    width: 360px;
+    max-width: 100%;
+}
+
+
+@media (max-width: 992px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-image {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-desc {
+        font-size: 14px;
+    }
+
+    .hero-image img {
+        width: 260px;
+    }
+}
+
+
+
+
+
+
+
+.latest-section {
+    width: 100%;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    color: #151875;
+    margin-bottom: 20px;
+}
+
+.latest-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.latest-tabs span {
+    font-size: 16px;
+    color: #151875;
+    cursor: pointer;
+    position: relative;
+}
+
+.latest-tabs .active {
+    color: #FB2E86;
+}
+
+.latest-tabs .active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: #FB2E86;
+}
+
+.latest-products {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px 40px;
+}
+
+.latest-card {
+    background: #ffffff;
+    padding: 30px;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.latest-card:hover {
+    border: 2px solid #9877E7;
+}
+
+.latest-card figure {
+    width: 100%;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.latest-card figure img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.sale-badge {
+    position: absolute;
+    top: 18px;
+    left: -12px;
+    background: #3F509E;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 6px 16px;
+    transform: rotate(-20deg);
+    border-radius: 3px;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.latest-card:hover .sale-badge {
+    opacity: 1;
+}
+
+.latest-icons {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.latest-icons .icon {
+    width: 32px;
+    height: 32px;
+    background: #EEEFFB;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: 0.3s ease;
+}
+
+.latest-card:hover .icon:nth-child(1) {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.05s;
+}
+
+.latest-card:hover .icon:nth-child(2) {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.1s;
+}
+
+.latest-card:hover .icon:nth-child(3) {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.15s;
+}
+
+.latest-icons img {
+    width: 16px;
+    height: 16px;
+}
+
+.latest-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.latest-info h3 {
+    font-size: 16px;
+    color: #151875;
+    font-weight: 400;
+}
+
+.price-box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.price-new {
+    font-size: 14px;
+    color: #151875;
+    font-weight: 600;
+}
+
+.price-old {
+    font-size: 14px;
+    color: #FB2E86;
+    text-decoration: line-through;
+}
+
+@media (max-width: 992px) {
+    .latest-products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .latest-products {
+        grid-template-columns: 1fr;
+    }
+}
+
+
