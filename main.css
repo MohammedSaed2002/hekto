@@ -921,4 +921,85 @@ body{
     }
 }
 
+.trending-section {
+    width: 100%;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.trending-title {
+    font-size: 36px;
+    color: #151875;
+    margin-bottom: 60px;
+}
+
+.trending-container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.trending-card {
+    background: #ffffff;
+    padding: 30px;
+    box-shadow: 0 8px 40px rgba(49, 32, 138, 0.05);
+    transition: 0.3s ease;
+}
+
+.trending-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 50px rgba(49, 32, 138, 0.12);
+}
+
+.trending-card figure {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.trending-card img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.trending-card h3 {
+    font-size: 16px;
+    color: #151875;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.trending-price {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.trending-price .new {
+    font-size: 14px;
+    color: #151875;
+    font-weight: 600;
+}
+
+.trending-price .old {
+    font-size: 14px;
+    color: #FB2E86;
+    text-decoration: line-through;
+}
+
+@media (max-width: 992px) {
+    .trending-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .trending-container {
+        grid-template-columns: 1fr;
+    }
+}
 
