@@ -5,9 +5,6 @@
     font-family: "Poppins", sans-serif;
 }
 
-body{
-    height: 6000px;
-}
 
 .header {
     width: 100%;
@@ -154,7 +151,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 300px;
+    margin-top: 120px;
 }
 
 .newsletter-content h2 {
@@ -222,7 +219,7 @@ body{
     width: 100%;
     text-align: center;
     padding: 91px 0 4px 0;
-     margin-top: 120px;
+     margin-top: 80px;
 }
 
 .section-title {
@@ -476,7 +473,7 @@ body{
 .footer {
     background: #F4F0FF;
     padding: 60px 0;
-    margin-top: 400px;
+    margin-top: 120px;
 }
 
 .footer-container {
